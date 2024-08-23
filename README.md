@@ -1,4 +1,4 @@
-# This Website is a travel agency Landing Page
-## Languages Used:
+<center> # This Website is a travel agency Landing Page </center>
+## Languages Used:-
 - HTML
 - CSS
