@@ -23,7 +23,8 @@ body {
 }
 
 .wrapper{
- margin: 0 auto;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 a {
@@ -36,11 +37,12 @@ li {
 }
 
 h1, h2 {
-    font-family: volhov;
+    font-family: volkhov;
 }
 
 h2 {
-    font-size: 32;
+  font-weight: bold;
+  font-size: 32px;
 }
 
 h3 {
@@ -59,7 +61,7 @@ section {
 }
 
 p {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 12;
     color: var(--grey-color);
 }
@@ -104,19 +106,12 @@ nav .signup-btn {
   padding: 12px;
   font-size: 14px;
   text-align: center;
-
 }
 /* header */
 header {
   height: 100vh;
-  width: 80%;
-  margin:  auto;
-}
-
-h2 {
-    font-family: volkhov;
-    font-weight: bold;
-    font-size: 32px;
+  max-width: 1134px;
+  margin: 0 auto;
 }
 
 /* navbar */
@@ -126,7 +121,7 @@ h2 {
   margin: 1.5rem 2rem;
   padding: 0.5rem;
   padding-left: 0;
-  width: 90%;
+  width: 100%;
 }
 /* logo */
 nav .logo {
@@ -170,10 +165,10 @@ nav .login {
 /* Hero Section */
 .hero-section {
   height: 100vh;
-  width: 90%;
+  width: 100%;
   margin: 1rem 2rem;
   padding-top: 1rem;
- 
+
 }
 
 .hero-section .hero-top {
@@ -183,6 +178,7 @@ nav .login {
 }
 
 .hero-image {
+  flex: 1;
   width: 60%;
 }
 
@@ -213,7 +209,7 @@ h1 .text-light-color {
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 6px;
-    width: 60vw;
+    width: 80%;
     margin: auto;
     padding: 1rem;
 }
@@ -260,10 +256,13 @@ h1 .text-light-color {
 .things-todo {
     padding: 0 12rem;
     height: 90vh;
-    width: 100%;
+    max-width: 100%;
     background-color: var(--blue-background-color);
 }
-
+.todo-wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
 .todo-content {
     padding: 2rem;
     margin: 1rem auto;
@@ -286,7 +285,7 @@ h1 .text-light-color {
     content: url(assets/aeroplane-to-do.svg);
     position: absolute;
     top: 25%;
-    right: 10%;
+    left: 75%;
 }
 
 .things-todo .card-container {
@@ -309,6 +308,7 @@ h1 .text-light-color {
 .deals-discounts {
     height: 100vh;
     margin-top: 25px;
+    width: 100%;
 }
 
 .deals-discounts .deals-content {
@@ -333,6 +333,7 @@ h1 .text-light-color {
 }
 
 .deals-discounts-cards {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,12 +350,12 @@ h1 .text-light-color {
 
 .deals-discounts .cards .card img {
   width: 100%;
-  height: 250px;
+  height: 35vh;
 }
 
 .deals-discounts .cards .card2 {
   position: relative;
-  box-shadow: rgb(250, 116, 54, .7) 0px 7px 30px 5px;
+  box-shadow: rgb(250, 116, 54, 1) 0px 7px 30px ;
 }
 
 .deals-discounts .cards .card2::after {
@@ -482,12 +483,11 @@ h1 .text-light-color {
   line-height: 2;
 }
 
-
 .best-vacation-plan .vacation-plan-content::after {
   content: url(assets/coconut-tree.svg);
   position: absolute;
-  top: 5%;
-  left:65%;
+  top: 0;
+  left: 70%;
 }
 
 .best-vacation-plan .left-right-arrow {
@@ -502,7 +502,8 @@ h1 .text-light-color {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
+  height: 50vh;
   gap: 2rem;
   margin: 2rem auto;
 }
@@ -516,7 +517,7 @@ h1 .text-light-color {
 
 .best-vacation-cards .card img {
   width: 100%;
-  height: 250px;
+  height: 40vh;
 }
 
 .best-vacation-cards .card:nth-child(2) {
@@ -572,9 +573,9 @@ h1 .text-light-color {
 /*  xxxxxxxx */
 
 /* Testimonial section */
-.testimony-wrapper .testimonial {
+.testimonial {
   background-color: var(--blue-background-color);
-  height: 90vh;
+  height: 85vh;
   width: 100%;
   margin:  auto;
   padding: 1rem;
@@ -679,7 +680,7 @@ h1 .text-light-color {
  /* Blog */
 
  .blog {
-  width: 80%;
+  width: 100%;
   height: 100vh;
   margin: auto;
   margin-top: 100px;
@@ -694,7 +695,7 @@ h1 .text-light-color {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 80%;
   gap: 1.5rem;
   margin: 2rem auto;
  }
@@ -757,7 +758,7 @@ footer {
 }
 
 footer .wrapper {
-  width: 80%;
+  width: 90%;
 }
 
 .subscribe {
@@ -771,6 +772,8 @@ footer .wrapper {
   border-radius: 8px;
   text-align: center;
   transform: translateY(-50%);
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .subscribe h2 {
@@ -784,10 +787,8 @@ footer .wrapper {
   content: url(assets/ecclipse.svg);
   position: absolute;
   z-index: 1;
-  width: 240px;
-  height: 150px;
   left: 0;
-  bottom: 30%;
+  bottom: -5px;
 }
 
 .subscribe::after {
@@ -826,7 +827,7 @@ footer .wrapper {
 .subscribe form::before {
   content: url(assets/mail-box.svg);
   position: absolute;
-  top: 38%;
+  top: 40%;
   left: 8px;
 }
 .subscribe form .subscribe-btn {
@@ -845,6 +846,9 @@ footer .wrapper {
   background-color: #fa7436;
 }
 .footer-links {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -852,11 +856,6 @@ footer .wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.footer-links .left-side-content p {
-  margin-left: 0;
-  padding-left: 0; 
 }
 .footer-links .left-side-content .logo {
   display: flex;
@@ -906,14 +905,13 @@ footer .right-side-content ul {
   margin: 0;
   padding: 0;
 }
-
+ footer hr {
+  width: 90%;
+}
 .copyright {
+  width: 90%;
   display: flex;
   justify-content: space-between;
+  margin-left: 5rem;
   margin-bottom: 1rem;
-}
-.footer-links {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 20px;
 }
