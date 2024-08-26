@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/title-logo.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/title-logo.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Trabook - Travel Agency</title>
   </head>
@@ -12,35 +16,36 @@
     <!-- Header -->
 
     <header>
-      <div class="wrapper">
-        <!-- Navbar -->
-        <nav class="navbar">
-          <div class="logo">
-            <h2 class="logo-name">Trabook</h2>
-            <img class="logo-vector" src="assets/logo.svg" alt="trabook-logo" />
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="logo">
+          <h2 class="logo-name">Trabook</h2>
+          <img class="logo-vector" src="assets/logo.svg" alt="trabook-logo" />
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">Tour</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="login-signup">
+          <a class="login" href="#">Login</a>
+          <div class="btn light-btn signup-btn">
+            <a href="#">Sign up</a>
           </div>
-          <ul class="nav-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Destination</a></li>
-            <li><a href="#">Tour</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-          <div class="login-signup">
-            <a class="login" href="#">Login</a>
-            <div class="btn light-btn signup-btn">
-              <a href="#">Sign up</a>
-            </div>
-          </div>
-        </nav>
+        </div>
+      </nav>
 
-        <!-- hero section -->
+      <!-- hero section -->
+      <div class="wrapper">
         <div class="hero-section">
           <div class="hero-top">
             <div class="content">
               <h1>
-                Get started your exciting
-                <span class="text-light-color">journey</span> with us.
+                Get started your<br />
+                exciting <span class="text-light-color">journey</span><br />
+                with us.
               </h1>
               <p>
                 A Team of experienced tourism professionals will provide you
@@ -52,44 +57,82 @@
             <!-- hero-image -->
             <div class="hero-image">
               <img
+                class="hero-aeroplane"
+                src="assets/aeroplane-hero-section.svg"
+                alt="aeroplane"
+                width="450px"
+              />
+              <img
+                class="hero"
                 src="assets/hero.png"
                 alt="hero"
-                width="700px"
-                height="500px"
+                width="400px"
+                height="400px"
               />
+
+              <div class="card achievement">
+                <img
+                  class="trophy"
+                  src="assets/trophy.png"
+                  alt="trophy"
+                  width="30px"
+                  height="30px"
+                />
+                <h4>
+                  Best Tour<br />
+                  Awards
+                </h4>
+              </div>
+
+              <div class="card explore">
+                <img
+                  class="google-map"
+                  src="assets/google-map.png"
+                  alt="google map logo"
+                  width="30px"
+                  height="30px"
+                />
+                <div class="content">
+                  <h4>Explore</h4>
+                  <span>Every cornar of the world with us</span>
+                </div>
+              </div>
+
+              <div class="card star-rating">
+                <img
+                  class="star"
+                  src="assets/star-hero.png"
+                  alt="star"
+                  width="30px"
+                  height="30px"
+                />
+                <div class="content">
+                  <h4>27k</h4>
+                  <span>Customer Reviewd</span>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Search bar -->
           <div class="search-bar">
             <div class="searchbar-content">
-              <div class="search-heading">
-                <h3>Location</h3>
-              </div>
-              <div class="search-content">
-                <p>Where are you going</p>
-              </div>
+              <h3 class="search-heading">Location</h3>
+              <p class="search-content">Where are you going</p>
             </div>
 
             <div class="searchbar-content">
-              <div class="search-heading">
-                <h3>Date</h3>
-              </div>
-              <div class="search-content">
-                <p>When will you go</p>
-              </div>
+              <h3 class="search-heading">Date</h3>
+              <p class="search-content">When will you go</p>
             </div>
 
             <div class="searchbar-content">
-              <div class="search-heading">
-                <h3>Guest</h3>
-              </div>
-              <div class="search-content">
-                <p>Number of guest</p>
-              </div>
+              <h3 class="search-heading">Guest</h3>
+              <p class="search-content">Number of guest</p>
             </div>
+
             <!-- searchbar button -->
-            <div class="btn light-btn">
+            <div class="searchbar-content btn light-btn">
               <a href="#">Explore Now</a>
             </div>
           </div>
@@ -98,15 +141,19 @@
     </header>
 
     <!-- TO do -->
-
     <section class="things-todo">
       <div class="wrapper todo-wrapper">
         <div class="todo-content">
-          <h2>Things you need <span class="text-light-color">to do</span></h2>
-          <p>
-            We ensure that you’ll embark on a perfectly planned,<br />
-            safe vacation at a price you can afford.
-          </p>
+          <div class="left">
+            <h2>Things you need <span class="text-light-color">to do</span></h2>
+            <p>
+              We ensure that you’ll embark on a perfectly planned,<br />
+              safe vacation at a price you can afford.
+            </p>
+          </div>
+          <div class="right aeroplane-vector">
+            <img src="assets/aeroplane-to-do.svg" alt="aeroplane vector" />
+          </div>
         </div>
 
         <!-- Cards -->
@@ -117,6 +164,7 @@
             <p>
               Completes all the work associated with planning and processing
             </p>
+            <!-- <img class="curved-line" src="assets/bottom-left-top-right.svg" alt="curved-line" /> -->
           </div>
           <div class="card card2">
             <img src="assets/money.svg" alt="wallet vector" />
@@ -135,9 +183,8 @@
     </section>
 
     <!-- Deals and discounts -->
-
-    <section class="deals-discounts">
-      <div class="wrapper">
+    <div class="wrapper">
+      <section class="deals-discounts">
         <div class="deals-content">
           <h2>
             Exclusive <span class="text-light-color">deals & discounts</span>
@@ -235,19 +282,23 @@
             alt="right-arrow"
           />
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Best Vacation Plan -->
-
-    <section class="best-vacation-plan">
-      <div class="wrapper">
+    <div class="wrapper">
+      <section class="best-vacation-plan">
         <div class="vacation-plan-content">
-          <h2>Best <span class="text-light-color">vacation plan</span></h2>
-          <p>
-            Plan your perfect vacation with our travel agency. Choose<br />
-            among hundreds of all-inclusive offers!
-          </p>
+          <div class="left">
+            <h2>Best <span class="text-light-color">vacation plan</span></h2>
+            <p>
+              Plan your perfect vacation with our travel agency. Choose<br />
+              among hundreds of all-inclusive offers!
+            </p>
+          </div>
+          <div class="right">
+            <img src="assets/coconut-tree.svg" alt="coconut-tree vector" />
+          </div>
         </div>
 
         <!-- Arrow -->
@@ -322,8 +373,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Testimonial section -->
 
@@ -358,26 +409,41 @@
           </div>
 
           <div class="testimonial-content-right">
-            <img
-              class="testimony1"
-              src="assets/testimonial1.png"
-              alt="testimony"
-            />
-            <div class="testimony-card">
-              <div class="testimonycard1 testimonycard-content">
-                <p>
-                  “On the Windows talking painted pasture yet its<br />
-                  express parties use. Sure last upon he same as<br />
-                  knew next. Of believed or diverted no.”
-                </p>
-                <h3 class="info-name">Mike taylor</h3>
-                <span class="info-location">Lahore, Pakistan</span>
-              </div>
+            <div class="left">
+              <img
+                class="testimony1"
+                src="assets/testimonial1.png"
+                alt="testimony"
+              />
+              <div class="testimony-cards">
+                <div class="testimonycard1 testimonycard-content">
+                  <p>
+                    “On the Windows talking painted pasture yet its
+                    express parties use. Sure last upon he same as
+                    knew next. Of believed or diverted no.”
+                  </p>
+                  <h3 class="info-name">Mike taylor</h3>
+                  <span class="info-location">Lahore, Pakistan</span>
+                </div>
 
-              <div class="testimonycard-content testimonycard2">
-                <h3 class="info-name">Chris Thomas</h3>
-                <span class="info-location">CEO of Red Button</span>
-              </div>         
+                <div class="testimonycard-content testimonycard2">
+                  <p>
+                    “On the Windows talking painted pasture yet its
+                    express parties use. Sure last upon he same as
+                    knew next. Of believed or diverted no.”
+                  </p>
+                  <h3 class="info-name">Chris Thomas</h3>
+                  <span class="info-location">CEO of Red Button</span>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <img
+                src="assets/testimonial-aeroplane.svg"
+                alt="aeroplane vector"
+                width="130px"
+
+              />
             </div>
           </div>
         </div>
@@ -385,9 +451,8 @@
     </section>
 
     <!-- Blog -->
-
-    <section class="blog">
-      <div class="wrapper blog-wrapper">
+    <div class="wrapper blog-wrapper">
+      <section class="blog">
         <h2>
           Get update with <span class="text-light-color">latest blog</span>
         </h2>
@@ -460,23 +525,25 @@
           <div class="circle"></div>
           <div class="circle"></div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- footer -->
 
     <footer>
       <div class="wrapper">
         <div class="subscribe">
+          <img class="ellipse" src="assets/ecclipse.svg" alt="ecclipse" >
           <h2>
             Subscribe and get exclusive<br />
             deals & offer
           </h2>
-
+          <img src="assets/mail-box.svg" class="mail-box" alt="mail-box" />
           <form action="#">
             <input type="text" placeholder="Enter your mail" />
             <button class="btn light-btn subscribe-btn">Subscribe</button>
           </form>
+          <img src="assets/subscribe-coconut-tree.svg" class="coconut-tree" />
         </div>
         <!-- footer links section -->
         <div class="footer-links">
