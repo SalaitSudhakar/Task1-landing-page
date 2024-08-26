@@ -808,7 +808,10 @@ footer .subscribe img.mail-box {
 .footer-links .right-side-content ul li {
   margin: 1rem 0;
 }
-
+.footer-links .right-side-content ul li a {
+  color: #000;
+  opacity: 0.7;
+}
 /* copyright */
 .copyright {
   width: 85%;
@@ -817,4 +820,8 @@ footer .subscribe img.mail-box {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 2rem;
+}
+.copyright a {
+  color: #000;
+  opacity: 0.7;
 }
