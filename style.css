@@ -825,3 +825,71 @@ footer .subscribe img.mail-box {
   color: #000;
   opacity: 0.7;
 }
+
+
+
+/* Media Query */
+@media (max-width: 1024px){
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  header, footer, section {
+    width: 100%;
+  }
+  /* hero section */
+  .hero-section {
+    width: 90%;
+    margin: 0 auto;
+    height: 130vh;
+    margin-top: 50px;
+  }
+  .search-bar {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* Things to do */
+  .things-todo {
+    margin-top: 40vh;
+    height: 110vh;
+  }
+  /* deals discounts */
+  .deals-discounts {
+    height: 125vh;
+  }
+  .deals-discounts .cards {
+    width: 90%;
+  }
+  /* best vacation plan */
+  .best-vacation-plan {
+    height: 125vh;
+  }
+  /* testimonial */
+  .testimonial {
+    height: 110vh;
+  }
+  /* blog */
+  .blog {
+    height: 120vh;
+  }
+  .blog .cards {
+    width: 93%;
+  }
+  /* footer */
+  .subscribe {
+    width: 90%;
+    height: 75vh;
+  }
+  .subscribe  h2 {
+    font-size: 34px;
+  }
+  .subscribe form {
+    margin-top: 0;
+  }
+  .subscribe form input {
+    font-size: 15px;
+  }
+  .subscribe .subscribe-btn {
+    padding: 0.7rem;
+  }
+}
