@@ -292,7 +292,6 @@ p {
 .things-todo {
   margin-top: 100px;
   width: 100%;
-  height: 90vh;
   background-color: var(--blue-background-color);
 }
 .things-todo .todo-content {
@@ -344,8 +343,8 @@ p {
 /* Deals Discounts */
 .deals-discounts {
   width: 100%;
-  height: 110vh;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .deals-discounts .deals-content {
   text-align: center;
@@ -365,7 +364,6 @@ p {
 }
 .deals-discounts .cards .card {
   flex: 1;
-  width: 18%;
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 12px;
@@ -456,8 +454,7 @@ p {
 
 .best-vacation-plan {
   width: 100%;
-  height: 100vh;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .best-vacation-plan .vacation-plan-content {
   display: flex;
@@ -485,8 +482,6 @@ p {
   gap: 4%;
 }
 .best-vacation-plan .cards .card {
-  width: 30%;
-
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 8px;
@@ -538,15 +533,12 @@ p {
 /* Testimonial Section */
 .testimonial {
   width: 100%;
-  height: 90vh;
   margin-top: 100px;
   padding-top: 100px;
-  padding-bottom: 100px;
   background-color: var(--blue-background-color);
 }
 .testimonial .testimonial-content {
   width: 90%;
-  height: 100vh;
   padding: 1rem;
   margin: 0 auto;
   display: flex;
@@ -656,7 +648,6 @@ p {
 .blog {
   margin-top: 150px;
   width: 100%;
-  height: 100vh;
 }
 .blog h2 {
   text-align: center;
@@ -674,7 +665,6 @@ p {
 }
 .blog .cards .card {
   flex: 1;
-  width: 18%;
   height: auto;
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -702,14 +692,13 @@ p {
 /* footer */
 footer {
   width: 100%;
-  height: 100vh;
   background-color: var(--blue-background-color);
 }
 
 /* subscribe */
 footer .subscribe {
   width: 90%;
-  height: 50vh;
+  height: 50%;
   background-color: #fa7436;
   margin: 0 auto;
   margin-top: 150px;
@@ -843,7 +832,6 @@ footer .subscribe img.mail-box {
   /* hero section */
   .hero-section {
     margin: 0 auto;
-    height: 130vh;
     margin-top: 50px;
   }
   .search-bar {
@@ -853,32 +841,14 @@ footer .subscribe img.mail-box {
   /* Things to do */
   .things-todo {
     margin-top: 40vh;
-    height: 110vh;
-  }
-  /* deals discounts */
-  .deals-discounts {
-    height: 125vh;
   }
 
-  /* best vacation plan */
-  .best-vacation-plan {
-    height: 125vh;
-  }
-  /* testimonial */
-  .testimonial {
-    height: 110vh;
-  }
   /* blog */
-  .blog {
-    height: 120vh;
-  }
+
   .blog .cards {
     width: 93%;
   }
   /* footer */
-  .subscribe {
-    height: 75vh;
-  }
   .subscribe h2 {
     font-size: 34px;
   }
@@ -897,7 +867,6 @@ footer .subscribe img.mail-box {
 @media (max-width: 958px) {
   .hero-section {
     width: 96%;
-    height: 200vh;
   }
   .hero-section .hero-top {
     width: 96%;
@@ -906,7 +875,6 @@ footer .subscribe img.mail-box {
   /* things to do */
   .things-todo {
     width: 100%;
-    height: 120vh;
     margin-top: 325px;
   }
   /* Deals and discounts */
@@ -915,25 +883,19 @@ footer .subscribe img.mail-box {
     gap: 1%;
   }
   /* best-vacation-plan */
-  .best-vacation-plan {
-    height: 110vh;
-  }
   .best-vacation-plan .cards {
     width: 100%;
   }
   /* testimonial */
   .testimonial {
     width: 100%;
-    height: 140vh;
   }
   /* blog */
   .blog .cards {
     width: 100%;
   }
   /* footer */
-  footer {
-    height: 140vh;
-  }
+
   .footer-links {
     flex-direction: column;
     justify-content: center;
