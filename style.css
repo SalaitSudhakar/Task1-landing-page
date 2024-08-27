@@ -169,6 +169,8 @@ p {
   margin: 0 auto;
   margin-top: 100px;
   padding: 0.5rem 1rem;
+  position: relative;
+  z-index: 1;
 }
 .hero-section .hero-top {
   display: flex;
@@ -212,7 +214,6 @@ p {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 8px;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   position: absolute;
   gap: 12px;
@@ -222,8 +223,8 @@ p {
 .hero-image .card .content {
   padding: 0;
   margin: 0;
-  display: inline-block;
 }
+
 .hero-image .card h4 {
   font-weight: 600;
   font-size: 16px;
@@ -295,7 +296,7 @@ p {
   background-color: var(--blue-background-color);
 }
 .things-todo .todo-content {
-  width: 85%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -318,7 +319,7 @@ p {
 }
 
 .things-todo .cards {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -354,7 +355,7 @@ p {
 }
 .deals-discounts .cards {
   display: flex;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 2rem;
   flex-wrap: wrap;
@@ -467,7 +468,7 @@ p {
   margin-bottom: 5vh;
 }
 .best-vacation-plan .left-right-arrow {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
@@ -475,7 +476,7 @@ p {
   gap: 2rem;
 }
 .best-vacation-plan .cards {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 5vh;
   display: flex;
@@ -575,114 +576,116 @@ p {
 .testimonial .testimonial-content .testimonial-content-right .right img {
   transform: translateX(50%);
 }
-  .testimonial
+.testimonial
   .testimonial-content
   .testimonial-content-right
   .left
   .testimonycard-content {
-    padding: 3rem 2rem 1rem 2rem;
-    margin-right: 1rem;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 3rem 2rem 1rem 2rem;
+  margin-right: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.testimonial .testimonial-content .testimonial-content-right .left {
+  position: relative;
+}
+.testimonial .testimonial-content .testimonial-content-right .left .testimony1 {
+  position: absolute;
+  z-index: 50;
+  top: -5%;
+  left: -5%;
 }
 .testimonial
   .testimonial-content
   .testimonial-content-right
-  .left {
-    position: relative;
-   
-  }
-  .testimonial
+  .left
+  .testimony-cards
+  .info-name {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.testimonial
   .testimonial-content
   .testimonial-content-right
-  .left 
-  .testimony1{
-    position: absolute;
-    z-index: 50;
-    top: -5%;
-    left: -5%;
-  }
-  .testimonial
+  .left
+  .testimony-cards
+  .info-location {
+  font-weight: 300;
+}
+.testimonial
   .testimonial-content
   .testimonial-content-right
-  .left .testimony-cards .info-name {
-     font-weight: 600;
-     margin-top: 1rem;
-  }
-  .testimonial
+  .left
+  .testimony-cards {
+  position: relative;
+}
+.testimonial
   .testimonial-content
   .testimonial-content-right
-  .left .testimony-cards .info-location {
-    font-weight: 300;
-  }
-  .testimonial
+  .left
+  .testimony-cards
+  .testimonycard1 {
+  position: relative;
+  z-index: 10;
+}
+.testimonial
   .testimonial-content
   .testimonial-content-right
-  .left .testimony-cards{
-     position: relative;
-  }
-  .testimonial
+  .left
+  .testimony-cards
+  .testimonycard2 {
+  position: absolute;
+  padding-top: 3rem;
+  padding-right: 4rem;
+  top: 30%;
+  opacity: 0.4;
+  transform: translateX(15%);
+}
+.testimonial
   .testimonial-content
   .testimonial-content-right
-  .left .testimony-cards .testimonycard1 {
-    position: relative;
-    z-index: 10;
-  }
-  .testimonial
-  .testimonial-content
-  .testimonial-content-right
-  .left .testimony-cards .testimonycard2 {
-    position: absolute;
-    padding-top: 50px;
-    padding-right: 75px;
-    top: 30%;
-    left: 8%;
-    opacity: 0.4;
-    transform: translateX(15%);
-  }
-  .testimonial
-  .testimonial-content
-  .testimonial-content-right
-  .left .testimony-cards .testimonycard2 .info-location{
-    padding-bottom: 0;
-  }
+  .left
+  .testimony-cards
+  .testimonycard2
+  .info-location {
+  padding-bottom: 0;
+}
 
-
-  /* Blog */
-  .blog {
-    margin-top: 150px;
-    width: 100%;
-    height: 100vh;
-  }
-  .blog h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  .blog .cards {
-    display: flex;
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-  }
-  .blog .cards .card {
-    flex: 1;
-    width: 18%;
-    height: auto;
-    background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 12px;
-  }
-  .blog .cards .card img {
-    width: 100%;
-    object-fit: cover;
-    height: 250px;
-    border-radius: 12px;
-  }
+/* Blog */
+.blog {
+  margin-top: 150px;
+  width: 100%;
+  height: 100vh;
+}
+.blog h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.blog .cards {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+.blog .cards .card {
+  flex: 1;
+  width: 18%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 12px;
+}
+.blog .cards .card img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  border-radius: 12px;
+}
 .blog .cards .card .card-content {
   padding: 0.7rem 0.5rem;
   font-size: 15px;
@@ -705,7 +708,7 @@ footer {
 
 /* subscribe */
 footer .subscribe {
-  width: 85%;
+  width: 90%;
   height: 50vh;
   background-color: #fa7436;
   margin: 0 auto;
@@ -752,10 +755,10 @@ footer form input {
   color: #000;
   position: relative;
 }
-footer .subscribe  .subscribe-btn {
- transform: translate(-110%);
+footer .subscribe .subscribe-btn {
+  transform: translate(-110%);
 }
-footer .subscribe  form::before {
+footer .subscribe form::before {
   content: url("assets/mail-box.svg");
   position: relative;
   z-index: 100;
@@ -768,9 +771,9 @@ footer .subscribe img.mail-box {
 }
 
 /* Footer links */
-.footer-links{
+.footer-links {
   margin-top: 0;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -826,20 +829,19 @@ footer .subscribe img.mail-box {
   opacity: 0.7;
 }
 
-
-
 /* Media Query */
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .wrapper {
-    max-width: 960px;
+    max-width: 958px;
     margin: 0 auto;
   }
-  header, footer, section {
+  header,
+  footer,
+  section {
     width: 100%;
   }
   /* hero section */
   .hero-section {
-    width: 90%;
     margin: 0 auto;
     height: 130vh;
     margin-top: 50px;
@@ -857,9 +859,7 @@ footer .subscribe img.mail-box {
   .deals-discounts {
     height: 125vh;
   }
-  .deals-discounts .cards {
-    width: 90%;
-  }
+
   /* best vacation plan */
   .best-vacation-plan {
     height: 125vh;
@@ -877,10 +877,9 @@ footer .subscribe img.mail-box {
   }
   /* footer */
   .subscribe {
-    width: 90%;
     height: 75vh;
   }
-  .subscribe  h2 {
+  .subscribe h2 {
     font-size: 34px;
   }
   .subscribe form {
@@ -891,5 +890,69 @@ footer .subscribe img.mail-box {
   }
   .subscribe .subscribe-btn {
     padding: 0.7rem;
+  }
+}
+
+/* max-width: 958px */
+@media (max-width: 958px) {
+  .hero-section {
+    width: 96%;
+    height: 200vh;
+  }
+  .hero-section .hero-top {
+    width: 96%;
+  }
+
+  /* things to do */
+  .things-todo {
+    width: 100%;
+    height: 120vh;
+    margin-top: 325px;
+  }
+  /* Deals and discounts */
+  .deals-discounts .cards {
+    width: 100%;
+    gap: 1%;
+  }
+  /* best-vacation-plan */
+  .best-vacation-plan {
+    height: 110vh;
+  }
+  .best-vacation-plan .cards {
+    width: 100%;
+  }
+  /* testimonial */
+  .testimonial {
+    width: 100%;
+    height: 140vh;
+  }
+  /* blog */
+  .blog .cards {
+    width: 100%;
+  }
+  /* footer */
+  footer {
+    height: 140vh;
+  }
+  .footer-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .footer-links .left-side-content {
+    position: relative;
+    align-items: flex-start;
+    margin-bottom: 5vh;
+  }
+  .footer-links .left-side-content ul {
+    position: absolute;
+    left: 150%;
+  }
+  .footer-links .left-side-content ul::before {
+    content: "Follow: ";
+    font-size: 18px;
+    padding-right: 1rem;
+    font-weight: bold;
   }
 }
